@@ -5,8 +5,26 @@ body {
 	background: #027DC0 url(img01.gif) repeat-y center top;
 	text-align: justify;
 	font-family: Arial, Helvetica, sans-serif;
-	font-size: 12px;
+	font-size: 15px;
 	color: #444444;
+}
+
+label{
+text-align: left;
+width: 210px;
+float: left;
+margin-top: .3em;
+font-weight: bold;
+}
+
+input{
+width: 180px;
+margin-left: 2.5em;
+display: right;
+}
+
+select{
+margin-left: 2.5em;
 }
 
 h1, h2, h3, h4, h5, h6 {
