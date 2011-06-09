@@ -19,7 +19,7 @@
 
   <p>Enter the following information</p>
 
-  <form name="basicInfo" method="post" id="basicInfo" onsubmit="validateReg()">
+  <form name="basicInfo" method="post" action="" id="basicInfo" onsubmit="return validateReg();">
     <p><label>First Name:</label> <input type="text" name="firstName" id="firstname"/></p>
 
     <p><label>Last Name (at graduation):</label> <input type="text" name=

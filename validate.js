@@ -9,6 +9,7 @@ function validateReg() {
       valid = false;
    }
    return valid;*/
+   return false;
 }
 
 function isEmpty(input) {
@@ -35,7 +36,7 @@ function checkpasswords() {
 function checkemail() {
 	var email = document.getElementById('email');
 	
-	if(email.indexOf(".") > 2) && (email.indexOf("@") > 0)) {
+	if((email.indexOf(".") > 2) && (email.indexOf("@") > 0)) {
 		return true;
 	} else {
 	   return false;
