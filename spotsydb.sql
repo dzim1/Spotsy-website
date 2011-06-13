@@ -18,3 +18,17 @@ CREATE TABLE IF NOT EXISTS `spotsydb`.`users` (
   
   INDEX( `new_last_name`)
 );
+
+CREATE TABLE IF NOT EXISTS `spotsydb`.`events` (
+  `user_id` smallint(6) NOT NULL,
+  `event` varchar(50) NOT NULL default '' PRIMARY KEY,
+  `invite` varchar(50) NOT NULL default ' ',
+  `event_date` varchar(50) NOT NULL default '',
+  `event_time` varchar(50) NOT NULL default '',
+  `address1` varchar(50) NOT NULL default '',
+  `address2` varchar(50) NOT NULL default '',
+  `description` blob NOT NULL default '',
+  `post_date` timestamp NOT NULL default '2011-01-01 00:00:00',
+  
+  INDEX(`post_date`)
+);
