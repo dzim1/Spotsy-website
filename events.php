@@ -22,11 +22,12 @@
 
 
 	//get the general comments that we've received from users	
-	$query = "SELECT first_name, new_last_name, email, event, invite, event_time, event_date, address1, address2, description, post_date FROM events NATURAL JOIN users ORDER BY post_date DESC";
+	$query = "SELECT user_id, first_name, new_last_name, email, event, invite, event_time, event_date, address1, address2, description, post_date FROM events NATURAL JOIN users ORDER BY post_date DESC";
 
 	$result = mysqli_query($db, $query) or die ("Error Querying Database");
 	
 	while($row = mysqli_fetch_array($result)){
+	    $userId = $row['user_id'];
 		$firstName = $row['first_name'];
 		$lastName = $row['new_last_name'];
 		$email = $row['email'];
@@ -40,7 +41,7 @@
 		$postDate = $row['post_date'];
 		
 		//display the comment
-		echo "<tr><td><b>Name: </b>" . $firstName . " " . $lastName . " (" . $email . ")" . "<br />";  
+		echo "<tr><td><b>Name: </b><a href= \"profile.php?id=" . $userId . "\">" . $firstName . " " . $lastName . "</a> (" . $email . ")" . "<br />";  
 		echo "<b>What: </b>" . $event . "<br />";
 		echo "<b>Who: </b>" . $invite . "<br />";
 		echo "<b>When: </b>" . $eventDate . " " . $eventTime . "<br />";

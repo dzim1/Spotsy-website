@@ -2,7 +2,7 @@
 body {
 	margin: 0px;
 	padding: 0px;
-	background: #027DC0 url(img01.gif) repeat-y center top;
+	background: #93DB70 url(img01.gif) repeat-y center top;
 	text-align: justify;
 	font-family: Arial, Helvetica, sans-serif;
 	font-size: 16px;
@@ -30,18 +30,20 @@ margin-left: 2.5em;
 
 h1, h2, h3, h4, h5, h6 {
 	font-family: Arial, Helvetica, sans-serif;
-	color: #027DC0;
+	color: #4CBB17;
+	font-size: 30px;
 	font-weight: bold;
+	font-family: Serif;
 }
 
 a {
 	font-weight: bold;
-	color: #4773C1;
+	color: #397D02
 }
 
 a:hover {
 	text-decoration: none;
-	color: #73C5E5;
+	color: #4CBB17;
 }
 
 #header {
@@ -59,7 +61,7 @@ a:hover {
 	width: 770px;
 	margin: 0px auto;
 	padding: 5px 0px 6px 0px;
-	background-color: #027DC0;
+	background-color: #4CBB17;
 }
 
 #menu ul {
@@ -82,7 +84,7 @@ a:hover {
 }
 
 #menu a:hover {
-	background-color: #73C5E5;
+	background-color: #93DB70;
 }
 
 #content {
@@ -94,6 +96,7 @@ a:hover {
 #content h1{
 	font-weight: normal;
 	font-size: 20px;
+	font-family: arial;
 }
 
 #content p, #content ul, #content ol {
@@ -101,5 +104,5 @@ a:hover {
 }
 
 #border-top {
-	border-top: 5px solid #60B7DE;
+	border-top: 5px solid #4CBB17;
 }

@@ -14,7 +14,7 @@
 <div id="content">
   <h1>Welcome Spotsylvania County Schools alumni!</h1>
 
-  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at sodales magna. Donec hendrerit lacus sit amet augue mollis cursus. 
+  <p><img src="spotsybullet.jpg" alt="" align="left"/>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas at sodales magna. Donec hendrerit lacus sit amet augue mollis cursus. 
   Nunc at massa quis nisl fermentum aliquet ac nec augue. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
   Suspendisse pulvinar tincidunt ipsum non rutrum. Cras et dui at nisl viverra feugiat vel ut massa. Praesent sit amet velit sit amet neque cursus molestie vitae et nibh. 
   Morbi dapibus ultrices augue. Proin vitae sodales dolor. In vitae ipsum elit, et lacinia sapien. Suspendisse sit amet velit orci, nec dignissim lectus.</p>
