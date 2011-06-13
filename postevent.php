@@ -1,4 +1,4 @@
-<?php include "header.html" ?>
+<?php include "header.php" ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -17,14 +17,14 @@
 
   <p>Fill in all information to share an event</p>
 
-  <form name="postevent" method="post" id="postevent">
+  <form name="postevent" method="post" action="submitEvent.php" id="postevent">
     <p><label>Name of Event:</label> <input type="text" name="event" id="event"/></p>
-
-    <p><label>Date the event is schedualed:</label> <input type="text" name="eventdate" id="eventdate"/></p>
-
+	<p><label>Who is invited:</label><input type="text" name="invited" id="invited"/></p>
+    <p><label>Date of the event:</label> <input type="text" name="eventdate" id="eventdate"/></p>
     <p><label>Time of the event:</label> <input type="text" name="eventtime" id="eventtime" /></p>
-
-    <p><label>Description of event:</label><br /> <textarea rows="10" cols="50"></textarea></p>
+    <p><label>Where the event is being held:</label><input type="text" name="address1" id="address1" /><br />
+	<input type="text" name="address2" id="address2" /></p>
+    <p><label>Description of event:</label> <textarea rows="10" cols="50" name = "description" id = "desciption"></textarea></p>
 <br />
     <input type="submit" value="Submit" />
   </form>

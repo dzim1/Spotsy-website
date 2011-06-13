@@ -1,4 +1,4 @@
-<?php include "header.html" ?>
+<?php include "header.php" ?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -14,10 +14,10 @@
 <div id="content">
   <h1>Login</h1>
 
-  <form name="login" method="post" id="login">
+  <form name="login" method="post" action="submitLogin.php" id="login">
     <p><label>Email Address:</label> <input type="text" name="email" id="email"/></p>
 
-    <p><label>Password:</label> <input type="text" name="password" id="password"/></p>
+    <p><label>Password:</label> <input type="password" name="password" id="password"/></p>
 <br />
     <input type="submit" value="Submit" />
   </form>
