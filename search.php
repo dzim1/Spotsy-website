@@ -22,7 +22,6 @@
     <label>Last Name:</label> <input type="text" name=
     "lastName" id="lastname"/></p>
 
-<<<<<<< HEAD
     <p><label>Date of graduation</label>
 	<select name = "gradDate" id = "gradDate" >
 		<option value ="1990">1990</option>
@@ -115,7 +114,6 @@
 		<option value="2000">2000</option>
 	</select></p>
 
->>>>>>> 54a5d6643e662d48539c2c9fffa1bbc3d2aff0b6
     <p><label>Elementary School attended:</label> 
 	<select name="elementary" id="elementary">
 		<option value="Battlefield">Battlefield</option>
