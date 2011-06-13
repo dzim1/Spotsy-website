@@ -1,6 +1,6 @@
 <?php
 	include('db_connect.php');
-	include('header.php');
+	include('header.html');
 
 	$error = "none";
 	
@@ -20,7 +20,7 @@
 
 	//check if user's username is already in db or not
 	$username = mysqli_real_escape_string($db,  $userEmail);
-	$query = "SELECT * FROM users WHERE (email = '$userEmail')";
+	$query = "SELECT * FROM spotsyUsers WHERE (email = '$userEmail')";
 	//echo $query;
 	$result = mysqli_query($db, $query) or die("Error Querying Database");
 
@@ -52,7 +52,7 @@
 	$result = mysqli_query($db, $query) or die ("Error Querying Database");  
 	  
      //if there are no errors, add user to db
-   $query = "INSERT INTO users (first_name, old_last_name, new_last_name, password, email, graduation_month, graduation_day, graduation_year, elementary, middle, high) VALUES ('$userFirstName', '$userLastName', '$userNewLastName', SHA('$userPassword'), '$userEmail', '$userGradMonth', '$userGradDay', '$userGradYear', '$userElementary', '$userMiddle', '$userHigh');";
+   $query = "INSERT INTO spotsyUsers (first_name, old_last_name, new_last_name, password, email, graduation_month, graduation_day, graduation_year, elementary, middle, high) VALUES ('$userFirstName', '$userLastName', '$userNewLastName', SHA('$userPassword'), '$userEmail', '$userGradMonth', '$userGradDay', '$userGradYear', '$userElementary', '$userMiddle', '$userHigh');";
    
    $result = mysqli_query($db, $query) or die ("Error Querying Database");
    

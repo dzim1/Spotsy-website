@@ -23,7 +23,7 @@
 
 
    //select user from db with the given username and password
-   $query = "SELECT * FROM users WHERE email = '$userEmail' AND password = SHA('$userPassword')";
+   $query = "SELECT * FROM spotsyUsers WHERE email = '$userEmail' AND password = SHA('$userPassword')";
 
 //   echo $query;    
 
