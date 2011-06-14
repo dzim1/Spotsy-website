@@ -1,7 +1,7 @@
 function checkpasswords() {
-	var pass1 = document.getElementById('password1');
-	var pass2 = document.getElementById('password2');
-	
+	var pass1 = document.basicInfo.password1.value;
+	var pass2 = document.basicInfo.password2.value;
+	alert(pass1);	
 	if (pass1 != pass2) {
 		alert("Your passwords don't match");
 		return false;

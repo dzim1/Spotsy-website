@@ -55,7 +55,9 @@
 ?>
 		<div class="content">
 		
-		<center>Your event was not sent. You did not fill in all of the fields. Please revisit <a href="postevent.php">this page</a>. <br>
+		<center>Your event was not sent. You did not fill in all of the fields or you are not logged in.
+<br />
+ Please revisit <a href="postevent.php">this page</a> to fill in missing information or <a href="login.php">login</a>.<br>
 <?php
 	}
 ?>
