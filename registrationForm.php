@@ -19,7 +19,7 @@
 
   <p>Enter the following information</p>
 
-  <form name="basicInfo" method="post" action="submitRegistration.php" id="basicInfo" onsubmit="">
+  <form name="basicInfo" method="post" action="submitRegistration.php" id="basicInfo" onsubmit= "return checkemail(), checkpasswords(), checknames();"method="post">
     <p><label>First Name:</label> <input type="text" name="firstname" id="firstname"/></p>
 
     <p><label>Last Name (at graduation):</label> <input type="text" name=

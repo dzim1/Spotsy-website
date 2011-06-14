@@ -22,7 +22,7 @@
 
 
 	//get the general comments that we've received from users	
-	$query = "SELECT user_id, first_name, new_last_name, email, event, invite, event_time, event_date, address1, address2, description, post_date FROM events NATURAL JOIN users ORDER BY post_date DESC";
+	$query = "SELECT user_id, first_name, new_last_name, email, event, invite, event_time, event_date, address1, address2, description, post_date FROM events NATURAL JOIN spotsyUsers ORDER BY post_date DESC";
 
 	$result = mysqli_query($db, $query) or die ("Error Querying Database");
 	

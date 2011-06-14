@@ -1,5 +1,5 @@
 <?php
-	/*//get logged-in user id from cookie/session
+	/*get logged-in user id from cookie/session
 	session_start();
 	$user_id = $_SESSION['user_id'];
 	if( isset($_COOKIE['user_id'])){
@@ -15,7 +15,7 @@
 
 <head>
 <title>Spotsylvania County School Alumni</title>
-<link href="CSS.css" rel="stylesheet" type="text/css" />
+<link href="CSS.css" rel="stylesheet" type="text/css" /> 
 </head>
 <body>
 <div id="header">

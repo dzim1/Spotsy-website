@@ -1,4 +1,4 @@
-<?php include "header.php" ?>
+<?php include "header.php"?>
 
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
     "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
@@ -12,19 +12,14 @@
 
 <body>
 <div id="content">
-  <h1>Login</h1>
+  <h1>Account Removal</h1>
 
-  <form name="login" method="post" action="submitLogin.php" id="login">
+  <form name="accountRemoval" method="post" action="removeAccount.php" id="delete">
     <p><label>Email Address:</label> <input type="text" name="email" id="email"/></p>
 
     <p><label>Password:</label> <input type="password" name="password" id="password"/></p>
 <br />
-    <input type="submit" value="Submit" />
+    <input type="submit" value="Remove" />
   </form>
-  <br />
-  <a href="registrationForm.php"> Register an account </a>
-  <br />
-  <a href="deleteAccount.php">Delete an account </a>
-  </div>
 </body>
 </html>

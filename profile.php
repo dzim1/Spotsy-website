@@ -18,7 +18,7 @@
 <?php
    $userId = $_GET["id"];
    
-   $query = "SELECT * FROM users WHERE user_id = $userId;";
+   $query = "SELECT * FROM spotsyUsers WHERE user_id = $userId;";
 
    $result = mysqli_query($db, $query) or die ("Error Querying Database - 1");
 	
@@ -36,7 +36,7 @@
 	echo "<H1> Alumni Profile </H1>";
 	echo "<b>Name: </b>" . $firstName . " " . $lastName . "<br />";
 	echo "<b>Email: </b>" . $email . "<br />";
-	echo "<b>Date Graduated: </b>" . $gradMonth . " " . $gradDay . ", " . $gradYear ."<br />";
+	echo "<b>Date Graduated: </b>" . $gradMonth . "/" . $gradDay . "/" . $gradYear ."<br />";
 	echo "<b>Elementary School Attended: </b>" . $elementary . "<br />";
 	echo "<b>Middle School Attended: </b>" . $middle . "<br />";
 	echo "<b>High School Attended: </b>" . $high;

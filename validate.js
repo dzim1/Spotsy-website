@@ -1,26 +1,3 @@
-function validateReg() {
-	alert("Your passwords don't match");
-   /*var valid = true;
-   if (isEmpty(document.getElementById('firstname')) || isEmpty( document.getElementById('lastname')) ||  document.getElementById('currlastname')) {
-      valid = false;
-   } else if (checkpasswords() == false) {
-      valid = false;
-   } else if (checkemail() == false) {
-      valid = false;
-   }
-   return valid;*/
-   return false;
-}
-
-function isEmpty(input) {
-	if (input.value.length == 0) { 
-		alert("You must fill in all fields");
-		return true; 
-	} else {
-		return false;
-	}
-}
-
 function checkpasswords() {
 	var pass1 = document.getElementById('password1');
 	var pass2 = document.getElementById('password2');
@@ -34,11 +11,27 @@ function checkpasswords() {
 }
 
 function checkemail() {
-	var email = document.getElementById('email');
-	
-	if((email.indexOf(".") > 2) && (email.indexOf("@") > 0)) {
-		return true;
-	} else {
-	   return false;
-	}
+   var x=document.forms["basicInfo"]["email"].value
+	var atpos=x.indexOf("@");
+	var dotpos=x.lastIndexOf(".");
+	if(atpos<1 || dotpos<atpos+2 || dotpos+2>x.length)
+	{
+	alert("Not a valid e-mail address");
+	return false;
+	}else{
+	return true;
 }
+}
+
+function checknames(){
+	var fname=document.forms["basicInfo"]["firstname"].value
+	//lgname = last name at graduation
+	var lgname=document.forms["basicInfo"]["lastname"].value
+	if(fname == "" || lgname == ""){
+	alert("You forgot to enter your name.");
+	return false;
+}else{
+	return true;
+}
+}
+

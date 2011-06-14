@@ -48,7 +48,6 @@
 		<option value ="2011">2011</option>
 		</select>
 		</p>
-=======
     <p><label>Date of graduation:</label>
 	<select name="month" id="month">
 		<option value="1">January</option>
