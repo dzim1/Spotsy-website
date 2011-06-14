@@ -20,7 +20,6 @@
     <table><tr><td>
     <p><b>First Name: </b></td><td><input type="text" name="firstname" id="firstname"/></p></td></tr>
 
-<<<<<<< HEAD
     <label>Last Name:</label> <input type="text" name=
     "lastName" id="lastname"/></p>
 
@@ -99,13 +98,11 @@
 		<option value="30">30</option>
 		<option value="31">31</option>
 	</select>
-=======
     <tr><td><p><b>Last Name: </b></td><td> <input type="text" name="lastname" id="lastname"/></td>
     <td><input type = "submit" value = "Search" /></p></td></tr>
 	
 	<tr><td>
     <p><b>Date of graduation: </b></td>
->>>>>>> 4cd2806a489239d6e9e9481ce018b82e6d5ae9aa
 	
 	<td><select name="year" id="year">
 	    <option value="">-Select One-</option>
